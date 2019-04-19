@@ -1,0 +1,130 @@
+.logo{
+	padding-top: 75px;
+	width: 130px;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+/*	background-color: aqua;*/
+}
+.navigation-ul{
+	display: flex;
+	list-style-type: none;
+}
+a{
+	font-size: 30px;
+	color:red;
+	text-decoration: none!important;
+}
+.navigation-li{
+	margin-right: 10px
+}
+
+.header:nth-child(1){
+	color:blue;
+	font-size: 20px;
+	background-color: red;
+	transform: rotate(10deg);
+}
+.header:nth-child(2){
+	color:red;
+	font-size: 25px;
+	background-color: blue;
+	transform: rotate(15deg);
+}
+.header:nth-child(3){
+	color:yellow;
+	font-size: 30px;
+	background-color: black;
+	transform: rotate(20deg);
+}
+.header:nth-child(4){
+	color:black;
+	font-size: 35px;
+	background-color: yellow;
+	transform: rotate(25deg);
+}
+.container-wraper img{
+	width:300px;
+}
+.image-wraper{
+	margin-right:30px;
+	float:left;
+}
+.image-wraper:nth-child(4){
+	margin-right: 40px;
+}
+.bg{
+	background-image: url(https://static.addtoany.com/images/dracaena-cinnabari.jpg);
+	width:1140px;
+	height:800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.navigation-li2{
+	margin-right: 5px;
+}
+.fix{
+	position:fixed;
+	width:100%;
+	background-color: aqua;
+	top:0px;
+}
+.box{
+	width: 600px;
+	height: 600px;
+	background-color: #F08080;
+	position: relative;
+	transition:background-color 0.5s linear 0.1s;
+}
+.wraper-box1{
+	width: 200px;
+	height: 200px;
+	background-color: #A52A2A;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.wraper-box2{
+	width: 200px;
+	height: 200px;
+	background-color: #DC143C;
+	position: absolute;
+	top:60px;
+	left:150px;
+	z-index: 5;
+}
+.wraper-box3{
+	width: 200px;
+	height: 200px;
+	background-color: #00008B;
+	position: absolute;
+	top:160px;
+	left:300px;
+	z-index: 6;
+	animation: motion 0.7 infinite;
+}
+.green{
+	left:0px;
+	top:50px;
+	color:#32CD32;
+}
+.greeng{
+	width:150px;
+	right:800px;
+	bottom:40px;
+}
+.box:hover{
+	background-color:#FF0000;
+	transform: rotate(5deg);
+
+}
+.wraper-box3:hover{
+	animation: motion 0.5s infinite;
+}
+
+@keyframes motion {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
